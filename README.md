@@ -20,3 +20,7 @@ docker compose run --rm app sh -c "python manage.py test"
 ```
     docker compose run --rm app sh -c "django-admin startproject app . "
 ```
+
+## Progress
+
+[Wed Aug 20 11:28:16 CDT 2025](https://www.udemy.com/course/django-python-advanced/learn/lecture/32238754#notes)
