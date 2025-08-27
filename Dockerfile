@@ -3,8 +3,8 @@ LABEL maintainer="some.poor.sap.com"
 # do not buffer outpuot i.e. no delays
 ENV PYTHONUNBUFFERED=1
 COPY ./requirements.txt ./tmp/requirements.txt
+COPY ./requirements.dev.txt /tmp/requirements.dev.txt
 COPY ./app /app
-COPY ./requirements.dev.txt /tmp/requirements.dev.txt 
 WORKDIR /app 
 EXPOSE 8000
 
@@ -27,7 +27,7 @@ RUN python -m venv /py && \
         --no-create-home \
         django-user
 
-ENV "PATH"="/py/bin:$PATH"
+ENV PATH="/py/bin:$PATH"
 
 USER django-user
 
