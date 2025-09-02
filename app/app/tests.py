@@ -9,10 +9,9 @@ from app import calc
 
 
 class CalcTest(SimpleTestCase):
-
     """Test che calc module."""
     def test_add_numbers(self):
-        """testing adding numbers together"""
+        """Test subtracting numbers."""
         res = calc.add(5, 6)
         self.assertEqual(res, 11)
 
