@@ -1,13 +1,14 @@
-"""Test for the Django admiin modifications."""
-
+"""
+Test for the Django admiin modifications.
+"""
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 from django.test import Client
 
+
 class AdminSuiteTests(TestCase):
     """Test for Django admin."""
-
 
     def setUp(self):
         """Create user and client."""
